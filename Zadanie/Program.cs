@@ -34,7 +34,7 @@ namespace Zadanie
             /*som chcel aby uzivatel zadal udaje ale nepodarilo sa mi spravit pole pre datovy typ Student 
              * plus som chcel aby cez for loop sa spravili vypisy aby som nemusel kazdeho jedneho cloveka osobitne kodovat
              * 
-             */
+             */ 
             Student[] student = new Student[4];
             for (int i = 0; i < 4; i++)
             {

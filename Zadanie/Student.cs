@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zadanie
 {
-    public class Student
+    public class Student: Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public string FavouriteBookName{ get; set; }
 
-        public Student(string FirstName, string LastName, string FavouriteBookName)
+        public Student(string FirstName, string LastName, string FavouriteBookName) //konstruktory odovodenych tried nefunguju v zakladnych triedach, preto ich treba manualne napisat do odvodenych tried 
         {
             this.FirstName = FirstName;
             this.LastName = LastName;
@@ -23,18 +21,6 @@ namespace Zadanie
         {
             this.FirstName = FirstName;
             this.LastName = LastName;
-        }
-
-        public string DisplayName()
-        {
-            return (FirstName + " " + LastName);
-        }
-
-        public void DisplayToConsoleDirectly()
-        {
-            Console.WriteLine("This is print from under the hood: ");
-            Console.WriteLine(FirstName + " " + LastName);
-            Console.WriteLine();
         }
 
     }
