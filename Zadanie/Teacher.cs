@@ -11,10 +11,8 @@ namespace Zadanie
 
         public int Salary { get; set; }
 
-        public Teacher(string FirstName, string LastName, int Salary)
+        public Teacher(string FirstName, string LastName, int Salary): this(FirstName, LastName)
         {
-            this.FirstName = FirstName;
-            this.LastName = LastName;
             this.Salary = Salary; // momentally not used
         }
 

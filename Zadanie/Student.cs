@@ -10,10 +10,8 @@ namespace Zadanie
     {
         public string FavouriteBookName{ get; set; }
 
-        public Student(string FirstName, string LastName, string FavouriteBookName) //konstruktory odovodenych tried nefunguju v zakladnych triedach, preto ich treba manualne napisat do odvodenych tried 
+        public Student(string FirstName, string LastName, string FavouriteBookName): this(FirstName, LastName) //konstruktory odovodenych tried nefunguju v zakladnych triedach, preto ich treba manualne napisat do odvodenych tried 
         {
-            this.FirstName = FirstName;
-            this.LastName = LastName;
             this.FavouriteBookName = FavouriteBookName;
         }
 

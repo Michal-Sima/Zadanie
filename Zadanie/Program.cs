@@ -60,18 +60,19 @@ namespace Zadanie
             }
 
             Console.WriteLine();
-
+            Console.WriteLine("Students are: ");
             for(int i = 0; i < 4 ; i++)
             {
                 student[i].DisplayToConsoleDirectly();
             }
 
             Console.WriteLine();
-
+            Console.WriteLine("Teachers are: ");
             for (int j = 0; j < 3; j++)
             {
                 teacher[j].DisplayToConsoleDirectly();
             }
+            Console.ReadKey();
         }
     }
 }
