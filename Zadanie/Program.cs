@@ -2,7 +2,7 @@
 
 namespace Zadanie
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -67,12 +67,50 @@ namespace Zadanie
             }
 
             Console.WriteLine();
-            Console.WriteLine("Teachers are: ");
+            Console.WriteLine("Teachers are: "); 
             for (int j = 0; j < 3; j++)
             {
                 teacher[j].DisplayToConsoleDirectly();
             }
+
+            int number = 5;
+            AddOne(number);
+            Console.WriteLine(number);
+            Cislo cislo = new Cislo(100);
+            Halda(cislo); 
             Console.ReadKey();
+
         }
+        static int AddOne(int number)
+        {
+            Console.WriteLine(number);
+            number = number + 1;
+            Console.WriteLine(number);
+            return 0;
+        }
+
+        static void Halda(Cislo cislo)
+        {
+            cislo.AddOne();
+            cislo = new Cislo(50);
+        }
+
+        public class Cislo
+        {
+            private int cislo;
+
+            public Cislo(int cislo)
+            {
+                this.cislo = cislo;
+            }
+
+            public void AddOne()
+            {
+                this.cislo = cislo++;
+            }
+
+          
+        }
+
     }
 }
